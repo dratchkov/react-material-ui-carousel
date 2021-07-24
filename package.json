@@ -26,12 +26,11 @@
     },
     "dependencies": {
         "auto-bind": "^2.1.1",
-        "babel-cli": "6.26.0",
         "react-swipeable": "^6.1.0"
     },
     "scripts": {
         "start": "react-scripts start",
-        "build": "NODE_ENV=production && npx --yes rimraf dist && npx --yes mkdirp dist && npx babel ./src --out-dir dist --copy-files",
+        "build": "npx --yes rimraf dist && npx --yes mkdirp dist && npx babel ./src --out-dir dist --copy-files",
         "prepare": "npm run build"
     },
     "eslintConfig": {
